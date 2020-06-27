@@ -7,7 +7,7 @@
     "server": "nodemon ./server/bin/www --exec babel-node --presets babel-preset-env",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
