@@ -6,10 +6,9 @@ const App = () => {
   const [items, setItems] = useState([]);
 
   const getItems = async () => {
-    const lists = await fetch('/list');
+    const lists = await fetch('/api/items');
     const response = await lists.json();
 
-    console.log(response);
     setItems(response.data);
   };
 
@@ -21,6 +20,7 @@ const App = () => {
     <div className="App">
       {items.map(item => (
         <div key={item.id}>
+          <h1>Hello</h1>
           <div>{item.attributes.condition}</div>
           <div>{item.attributes.links.image}</div>
         </div>
