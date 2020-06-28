@@ -6,7 +6,7 @@
     "node": "v12.16.3"
   },
   "scripts": {
-    "start": "nodemon ./server/bin/www",
+    "start": "node ./server/bin/www",
     "heroku-postbuild": "cd server && npm install && cd ../client && npm install && npm run build"
   }
 }
