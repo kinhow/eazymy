@@ -1,0 +1,148 @@
+@import "../../scss/components/variable";
+
+.wrapper {
+  @extend %valign;
+  @include screen-size(xl) {
+    align-items: flex-start;
+  }
+
+  @include screen-size(sm) {
+    flex-direction: column;
+  }
+
+  .titleImage {
+    width: 70%;
+    margin-right: 20px;
+
+    @include screen-size(xl) {
+      width: 50%;
+      margin-right: 0;
+    }
+
+    @include screen-size(sm) {
+      width: 100%;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: $opensans-font;
+      margin: 15px 0;
+    }
+
+    .image {
+      padding: 20px;
+      border: 1px solid $border-color;
+    }
+  }
+
+  .details {
+    width: 30%;
+    font-family: $opensans-font;
+    border: 1px solid $border-color;
+
+    @include screen-size(xl) {
+      width: 50%;
+    }
+
+    @include screen-size(sm) {
+      width: 100%;
+      border: none;
+    }
+
+    .detailsWrap {
+      padding: 20px 25px;
+      border-bottom: 1px solid $border-color;
+    }
+
+    .social {
+      @extend %valign;
+
+      .tag {
+        @extend %valign;
+        flex: 1;
+
+        .icon {
+          width: 20px;
+          display: flex;
+          margin-right: 10px;
+        }
+
+        .tagName {
+          font-size: 14px;
+          font-weight: 400;
+          color: $text-color;
+        }
+      }
+    }
+
+    .info {
+      font-size: 12px;
+      font-weight: 400;
+      margin: 20px 0;
+
+      .infoWrapper {
+        margin-bottom: 15px;
+
+        .infoPrice {
+          font-size: 18px;
+          font-weight: 700;
+          color: $price-color;
+        }
+      }
+    }
+
+    .sellerWrapper {
+      .sellerInfo {
+        @extend %valign;
+
+        .sellerIcon {
+          width: 50px;
+          display: flex;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .infoTitle {
+      font-size: 12px;
+      color: $text-color;
+    }
+
+    .infoText {
+      font-weight: 600;
+      font-size: 14px;
+      color: $item-color;
+    }
+
+    .contact {
+      padding: 20px 25px;
+
+      @include screen-size(sm) {
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+        padding: 10px;
+        background-color: $primary-color;
+        box-shadow: 0px 0px 10px 5px #00000029;
+
+        .contactInfo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .content {
+        font-size: 14px;
+        font-weight: 600;
+        color: $item-color;
+        margin-bottom: 8px;
+
+        @include screen-size(sm) {
+          display: none;
+        }
+      }
+    }
+  }
+}

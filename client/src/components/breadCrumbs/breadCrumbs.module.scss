@@ -1,0 +1,20 @@
+@import "../../scss/components/variable";
+
+.breadCrumb {
+  @extend %valign;
+
+  @include screen-size(md) {
+    display: none;
+  }
+
+  .breadName {
+    color: $item-color;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: $opensans-font;
+
+    &:nth-child(2n - 2) {
+      margin: 0 8px;
+    }
+  }
+}

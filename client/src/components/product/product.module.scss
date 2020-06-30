@@ -1,0 +1,30 @@
+@import "../../scss/components/variable";
+
+.box {
+  width: 140px;
+  padding: 10px;
+  margin: 0 10px 15px;
+  border-radius: 5px;
+  border: 1px solid $border-color;
+
+  @include screen-size(xs) {
+    margin: 0 5px 15px;
+  }
+}
+
+.name {
+  height: 34px;
+  overflow: hidden;
+  margin: 5px 0;
+  color: $item-color;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: $roboto-font;
+}
+
+.price {
+  color: $price-color;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: $roboto-font;
+}

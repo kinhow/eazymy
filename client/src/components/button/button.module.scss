@@ -1,0 +1,43 @@
+@import "../../scss/components/variable";
+
+.button {
+  @extend %valign;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin: 8px 0;
+  border: 1px solid $price-color;
+
+  @include screen-size(sm) {
+    margin: 0;
+
+    &:nth-child(3n - 1) {
+      margin: 0 5px;
+    }
+  }
+
+  &.red {
+    background-color: $price-color;
+  }
+
+  .icon {
+    width: 20px;
+    display: flex;
+  }
+
+  .title {
+    color: $price-color;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $opensans-font;
+
+    @include screen-size(sm) {
+      padding-left: 5px;
+      font-size: 12px;
+    }
+
+    &.white {
+      color: $primary-color;
+    }
+  }
+}

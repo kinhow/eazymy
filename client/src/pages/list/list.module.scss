@@ -1,0 +1,38 @@
+@import "../../scss/components/variable";
+
+.container {
+  top: 83px;
+  position: relative;
+  padding: 30px 50px;
+  margin: 10px auto;
+  max-width: 1500px;
+  background-color: $primary-color;
+
+  @include screen-size(xs) {
+    padding: 20px 10px;
+  }
+
+  .wrapper {
+    margin: auto;
+    max-width: 1000px;
+
+    .title {
+      font-weight: 500;
+      font-size: 18px;
+      font-family: $roboto-font;
+      text-transform: uppercase;
+      margin: 0 30px;
+
+      @include screen-size(xs) {
+        margin: 0;
+      }
+    }
+
+    .product {
+      @extend %valign;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+  }
+}

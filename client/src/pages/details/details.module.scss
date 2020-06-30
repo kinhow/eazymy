@@ -1,0 +1,29 @@
+@import "../../scss/components/variable";
+
+.container {
+  top: 83px;
+  padding: 40px 0 230px;
+  position: relative;
+  background-color: $primary-color;
+
+  @include screen-size(md) {
+    padding: 20px 0 80px;
+  }
+
+  .wrapper {
+    max-width: 1300px;
+    margin: auto;
+
+    .name {
+      font-size: 18px;
+      font-weight: 600;
+      font-family: $opensans-font;
+      margin: 10px 0 8px;
+
+      @include screen-size(sm) {
+        padding: 0 15px;
+        margin: 0 0 20px;
+      }
+    }
+  }
+}

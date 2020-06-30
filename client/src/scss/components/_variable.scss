@@ -1,0 +1,23 @@
+@import "../../scss/components/extenders";
+@import "../../scss/components/mixin";
+
+// Color
+$primary-color: #ffffff;
+$background-color: #eeeeee;
+$icon-color: #d90e0e;
+$link-color: #333333;
+$border-color: #d8d8d8;
+$price-color: #e01a1a;
+$item-color: #4d4d4d;
+$text-color: #707070;
+
+// Font
+$roboto-font: "Roboto", sans-serif;
+$opensans-font: "Open Sans", sans-serif;
+
+// Screen Size
+$screen-xs-min: 425px; // Tiny phones
+$screen-sm-min: 576px; // Small tablets and large smartphones (landscape view)
+$screen-md-min: 768px; // Small tablets (portrait view)
+$screen-lg-min: 992px; // Tablets and small desktops
+$screen-xl-min: 1300px; // Large tablets and desktops
